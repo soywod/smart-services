@@ -1,0 +1,47 @@
+@import "colors"
+
+.menu
+  position: fixed
+  display: flex
+  top: 0
+  left: 0
+  right: 0
+  z-index: 2
+  background: #ffffff
+  padding: 15px
+
+.menu-right
+  flex: 1
+  list-style-type: none
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  text-align: center
+  margin: 0
+
+  a
+    color: $black
+    margin-left: 25px
+    text-decoration: none
+
+    &:hover,
+    &:visited
+      text-decoration: none
+
+    &:hover
+      color: $blue
+      text-decoration: underline
+
+  li
+    align-self: flex-end
+
+    &.active a
+      color: $blue
+
+
+.menu-logo
+  width: 175px
+  padding-bottom: 15px
+
+body.fp-viewing-papier-ou-numerique [data-menuanchor=integration-et-management] a
+  color: $blue

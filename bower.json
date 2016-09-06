@@ -1,0 +1,14 @@
+{
+  "name": "smart-services",
+  "authors": [
+    "Clément DOUIN <clementdouin@soywod.fr>"
+  ],
+  "description": "Site vitrine Oone Page pour Smart Services",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "html5-boilerplate": "^5.3.0",
+    "fullpage.js": "fullpage#^2.8.6"
+  }
+}
