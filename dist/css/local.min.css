@@ -1,1 +1,68 @@
-.menu{position:fixed;display:flex;top:0;left:0;right:0;z-index:1;background:#fff;padding:15px}.menu-right{flex:1;list-style-type:none;display:flex;justify-content:flex-end;align-items:center;text-align:center;margin:0}.menu-right a{color:#222;margin-left:25px}.menu-right a,.menu-right a:hover,.menu-right a:visited{text-decoration:none}.menu-right a:hover{color:#1160a7;text-decoration:underline}.menu-right li{align-self:flex-end}.menu-right li.active a{color:#1160a7}.menu-logo{width:175px;padding-bottom:15px}body.fp-viewing-papier-ou-numerique [data-menuanchor=integration-et-management] a{color:#1160a7}.integration-et-management,.optimisation-documents,.optimisation-durable,.papier-ou-numerique{background:#1160a7}.audit-et-expertise,.contact,.dematerialisation{background:gray}.gestion-projet,.solutions-archivage{background:#fff}.text-white{color:#fff!important}body{font-family:Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif}ul{padding:0}a:focus,a:hover,a:visited{outline:none}
+.menu {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: #ffffff;
+  padding: 15px; }
+
+.menu-right {
+  flex: 1;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  margin: 0; }
+  .menu-right a {
+    color: #222222;
+    margin-left: 25px;
+    text-decoration: none; }
+    .menu-right a:hover, .menu-right a:visited {
+      text-decoration: none; }
+    .menu-right a:hover {
+      color: #1160a7;
+      text-decoration: underline; }
+  .menu-right li {
+    align-self: flex-end; }
+    .menu-right li.active a {
+      color: #1160a7; }
+
+.menu-logo {
+  width: 175px;
+  padding-bottom: 15px; }
+
+body.fp-viewing-papier-ou-numerique [data-menuanchor=integration-et-management] a {
+  color: #1160a7; }
+
+.optimisation-documents,
+.optimisation-durable,
+.integration-et-management,
+.papier-ou-numerique {
+  background: #1160a7; }
+
+.audit-et-expertise,
+.dematerialisation,
+.contact {
+  background: #808080; }
+
+.gestion-projet,
+.solutions-archivage {
+  background: #ffffff; }
+
+.text-white {
+  color: #ffffff !important; }
+
+.text-center {
+  text-align: center; }
+
+body {
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; }
+
+ul {
+  padding: 0; }
+
+a:hover, a:focus, a:visited {
+  outline: none; }
