@@ -51,6 +51,33 @@
   .more
     float: right
 
+
+.template-2
+  align-items: flex-end
+
+  .flex-1
+    position: relative
+    text-align: right
+
+    &:before
+      position: absolute
+      display: inline-block
+      content: ''
+      right: 155px
+      top: 59px
+      height: 8px
+      background: $white
+      width: 2000px
+
+  img
+    width: 125px
+    border: 10px solid $white
+    margin: 0 30px 0 0
+    border-radius: 50%
+
+  .more
+    float: right
+
 .optimisation-documents
   background: $blue
   color: $white
@@ -97,10 +124,10 @@
   .more
     float: right
 
-
 .audit-et-expertise
   background: $grey
   color: $white
+
 
 .gestion-projet
   background: $white
@@ -112,6 +139,23 @@
   .bar:before
     background: $blue
 
+
 .integration-et-management
-  background: $grey
+  background: $blue
   color: $white
+
+.papier-ou-numerique
+  background: $blue
+  color: $white
+
+  .flex-1
+    text-align: left
+
+    &:before
+      left: 155px
+
+  img
+    margin: 0 0 0 30px
+
+  .more
+    float: left
