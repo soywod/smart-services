@@ -1,8 +1,22 @@
 @import "colors"
 
-.text-white
-  color: $white !important
-
 .text-center
   text-align: center
 
+.more
+  display: inline-block
+  font-size: 26px
+  line-height: 87px
+  height: 100px
+  width: 100px
+  text-decoration: none
+  border-radius: 50%
+  color: $black
+  border: 6px solid $black
+
+  &:hover
+    text-decoration: underline
+
+  &.white
+    color: $white
+    border-color: $white
