@@ -1,8 +1,7 @@
 @import "colors"
 
 .menu
-  display: flex
-  right: 0
+  width: 100%
   z-index: 2
   background: #ffffff
   padding: 15px
@@ -18,7 +17,6 @@
 
   a
     color: $black
-    margin-left: 25px
     text-decoration: none
 
     &:hover,
@@ -29,15 +27,16 @@
       color: $blue
 
   li
-    align-self: flex-end
+    padding: 15px
 
     &.active a
-      color: $blue
+        color: $blue
 
 
 .menu-logo
-  width: 175px
+  height: 50px
   padding-bottom: 15px
+  float: left
 
 body.fp-viewing-papier-ou-numerique [data-menuanchor=integration-et-management] a
   color: $blue
