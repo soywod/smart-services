@@ -8,8 +8,7 @@ var paths = {
     css: [
         "bower_components/html5-boilerplate/dist/css/normalize.css",
         "bower_components/html5-boilerplate/dist/css/main.css",
-        "bower_components/fullpage.js/dist/jquery.fullpage.min.css",
-        "src/css/bootstrap-grid.css"
+        "bower_components/fullpage.js/dist/jquery.fullpage.min.css"
     ],
     js : {
         head: [

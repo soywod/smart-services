@@ -26,12 +26,42 @@
     color: $blue
     border-color: $blue
 
+.container
+  margin-right: auto
+  margin-left: auto
+  padding-left: 15px
+  padding-right: 15px
+
+.container-fluid
+  margin-right: auto
+  margin-left: auto
+  padding-left: 15px
+  padding-right: 15px
+
 .clearfix,
 .clearfix:before,
-.clearfix:after
+.clearfix:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after
   content: " "
   display: table
 
 .clearfix:after,
-.container:after
+.container:after,
+.container:after,
+.container-fluid:after
   clear: both
+
+@media (min-width: 768px)
+  .container
+    width: 750px
+
+@media (min-width: 992px)
+  .container
+    width: 970px
+
+@media (min-width: 1200px)
+  .container
+    width: 1170px
