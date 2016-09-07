@@ -1,15 +1,5 @@
 @import "colors"
 
-.papier-ou-numerique
-  background: $blue
-
-.dematerialisation,
-.contact
-  background: $grey
-
-.solutions-archivage
-  background: $white
-
 .template-1
   h2
     margin-bottom: 7px
@@ -31,9 +21,11 @@
   .flex-1
     text-align: right
 
-  .flex p
+  .flex p,
+  .flex ul
     font-size: 16px
     line-height: 20px
+    list-style-type: none
 
   .bar
     position: relative
@@ -50,7 +42,6 @@
 
   .more
     float: right
-
 
 .template-2
   align-items: flex-end
@@ -95,39 +86,13 @@
   h3
     margin-top: 15px
 
-
 .optimisation-durable
   background: $blue
   color: $white
-  align-items: flex-end
-
-  .flex-1
-    position: relative
-    text-align: right
-
-    &:before
-      position: absolute
-      display: inline-block
-      content: ''
-      right: 155px
-      top: 59px
-      height: 8px
-      background: $white
-      width: 2000px
-
-  img
-    width: 125px
-    border: 10px solid $white
-    margin: 0 30px 0 0
-    border-radius: 50%
-
-  .more
-    float: right
 
 .audit-et-expertise
   background: $grey
   color: $white
-
 
 .gestion-projet
   background: $white
@@ -138,7 +103,6 @@
 
   .bar:before
     background: $blue
-
 
 .integration-et-management
   background: $blue
@@ -159,3 +123,49 @@
 
   .more
     float: left
+
+.dematerialisation
+  background: $grey
+  color: $white
+
+  .bar:before
+    right: -50px
+
+.solutions-archivage
+  background: $white
+  color: $black
+
+  h2
+    color: $blue
+
+  .bar:before
+    background: $blue
+    right: -50px
+
+.contact
+  background: $grey
+  color: $white
+
+  img
+    width: 140px
+    border-radius: 50%
+    border: 6px solid $white
+    margin: -70px 0 0 0
+
+    &:nth-of-type(2)
+      margin: 70px 25px 0 -25px
+
+  a img
+    margin: 0
+    float: right
+
+  .flex p
+    font-size: 20px
+    line-height: 26px
+
+  .bar:before
+    right: -1px
+    top: 66px
+    height: 8px
+    background: $white
+    width: 2000px
