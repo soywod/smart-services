@@ -10,7 +10,7 @@
     margin-top: 0
     line-height: 20px
 
-  .container > p
+  .container > p:last-of-type
     margin: 7px 0 60px 0
 
   img
@@ -59,7 +59,7 @@
       background: $white
       width: 2000px
 
-  img
+  .picto.line
     width: 125px
     border: 10px solid $white
     margin: 0 30px 0 0
@@ -72,15 +72,14 @@
   background: $blue
   color: $white
 
-  .flex
+  .flex.center
     align-items: flex-end
     justify-content: center
     text-align: center
     padding-top: 30px
 
-  .picto
-    width: 100px
-    height: 100px
+  .flex-1
+    margin-top: 20px
 
   h3
     margin-top: 15px
@@ -98,10 +97,10 @@
   color: $black
 
   h2
-    color: $blue
+    color: $grey
 
   .bar:before
-    background: $blue
+    background: $grey
 
 .integration-et-management
   background: $blue
@@ -117,7 +116,7 @@
     &:before
       left: 155px
 
-  img
+  .picto.line
     margin: 0 0 0 30px
 
   .more
@@ -135,10 +134,10 @@
   color: $black
 
   h2
-    color: $blue
+    color: $grey
 
   .bar:before
-    background: $blue
+    background: $grey
     right: -50px
 
 .contact

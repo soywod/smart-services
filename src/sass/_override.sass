@@ -9,8 +9,6 @@
 
 body
   font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif
-  display: flex
-  flex-direction: column
 
 ul
   padding: 0
@@ -27,11 +25,22 @@ h2
   font-size: 48px
   font-weight: 100
   margin-top: 0
+  line-height: 55px
 
 h3
-  font-size: 36px
+  font-size: 32px
   font-weight: 100
 
 p
   font-size: 24px
   line-height: 28px
+
+footer
+  position: fixed
+  left: 0
+  bottom: 0
+  width: 100%
+  z-index: 2
+  height: 50px
+  background: $white
+  border-top: 1px solid transparentize($grey, .85)
