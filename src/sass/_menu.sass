@@ -20,6 +20,12 @@
   text-align: center
   margin: 0
 
+  li
+    padding: 15px
+
+    &.active a
+      color: $blue
+
   a
     color: $black
     text-decoration: none
@@ -32,12 +38,6 @@
     &:hover
       color: $blue
 
-  li
-    padding: 15px
-
-    &.active a
-      color: $blue
-
 .menu-logo
   height: 50px
   padding-bottom: 15px
@@ -45,3 +45,25 @@
 
 body.fp-viewing-papier-ou-numerique [data-menuanchor=integration-et-management] a
   color: $blue
+
+// ==================== MEDIA QUERIES ==================== //
+
+@media (max-width: 1366px)
+  .menu-right
+    li
+      padding: 10px
+    a
+      font-size: 12px
+
+  .menu-logo
+    height: 40px
+
+@media (max-width: 768px)
+  .menu
+    padding: 5px
+    text-align: center
+
+  .menu-logo
+    height: 35px
+    padding-bottom: 5px
+    float: inherit
