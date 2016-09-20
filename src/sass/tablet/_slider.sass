@@ -1,0 +1,213 @@
+@import "../colors"
+
+.more
+  text-align: center
+  display: inline-block
+  font-size: 20px
+  line-height: 68px
+  height: 75px
+  width: 75px
+  text-decoration: none
+  border-radius: 50%
+  color: $black
+  border: 4px solid $black
+
+  &:hover
+    text-decoration: underline
+
+  &.white
+    color: $white
+    border-color: $white
+
+  &.blue
+    color: $blue
+    border-color: $blue
+
+  &.grey
+    color: $grey
+    border-color: $grey
+
+.template-1
+  h2
+    margin-bottom: 7px
+
+  h4
+    font-size: 14px
+    line-height: 16px
+    margin-bottom: 10px
+    font-weight: bold
+
+  .container > p:last-of-type
+    margin: 14px 0 14px 0
+
+  img
+    width: 40px
+    margin-right: 22px
+
+  .flex-1
+    text-align: right
+
+  .flex p,
+  .flex ul
+    font-size: 12px
+    line-height: 14px
+    list-style-type: none
+
+  .bar
+    position: relative
+
+    &:before
+      position: absolute
+      display: inline-block
+      content: ''
+      right: 0
+      top: 20px
+      height: 4px
+      background: $white
+      width: 2000px
+
+  .more
+    float: right
+
+.template-2
+  align-items: flex-end
+
+  .flex-1
+    position: relative
+    text-align: right
+
+    &:before
+      position: absolute
+      display: inline-block
+      content: ''
+      right: 119px
+      top: 47px
+      height: 4px
+      background: $white
+      width: 2000px
+
+  .picto
+    width: 60px
+
+  .picto.line
+    width: 90px
+    border: 5px solid $white
+    margin: 0 30px 0 0
+    border-radius: 50%
+
+  .more
+    float: right
+
+.optimisation-documents
+  background: $blue
+  color: $white
+
+  .flex.center
+    align-items: flex-end
+    justify-content: center
+    text-align: center
+    padding-top: 30px
+
+  .flex-1
+    margin-top: 0
+
+  h3
+    margin-top: 15px
+
+.optimisation-durable
+  background: $blue
+  color: $white
+
+.audit-et-expertise
+  background: $grey
+  color: $white
+
+.gestion-projet
+  background: $white
+  color: $black
+
+  h2
+    color: $grey
+
+  .bar:before
+    background: $grey
+
+.integration-et-management
+  background: $blue
+  color: $white
+
+.papier-ou-numerique
+  background: $blue
+  color: $white
+
+  .flex-1
+    text-align: left
+
+    &:before
+      left: 119px
+
+  .picto.line
+    margin: 0 0 0 30px
+
+  .more
+    float: left
+
+.dematerialisation
+  background: $grey
+  color: $white
+
+  .bar:before
+    right: -30px
+
+.solutions-archivage
+  background: $white
+  color: $black
+
+  h2
+    color: $grey
+
+  .bar:before
+    background: $grey
+    right: -30px
+
+.contact
+  background: $grey
+  color: $white
+
+  .flex-1
+    text-align: left
+
+  img
+    display: none
+
+  .flex p
+    font-size: 16px
+    line-height: 20px
+
+  .bar:before
+    display: none
+
+  .contact-form
+    .flex-1
+      padding: 6px 12px
+
+    input,
+    textarea
+      width: 100%
+      background: $grey
+      border-radius: 4px
+      border: 1px solid $white
+      padding: 7px 10px
+      font-weight: bold
+
+    button[type=submit]
+      background: $white
+      color: $grey
+      border-radius: 4px
+      border: 0
+      padding: 7px 10px
+
+  .copyright
+    font-size: 14px
+    text-align: right
+    margin-top: 15px

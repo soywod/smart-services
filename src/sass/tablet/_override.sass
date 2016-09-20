@@ -1,0 +1,75 @@
+@import "../colors"
+
+*,
+*:before,
+*:after
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+body
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif
+
+ul
+  padding: 0
+
+a
+  color: $white
+
+  &:hover,
+  &:focus,
+  &:visited
+    outline: none
+
+h2
+  font-size: 32px
+  line-height: 40px
+  font-weight: 100
+  margin-top: 0
+
+h3
+  font-size: 26px
+  font-weight: 100
+
+p
+  font-size: 18px
+  line-height: 22px
+
+footer
+  position: fixed
+  left: 0
+  bottom: 0
+  width: 100%
+  z-index: 2
+  height: 73px
+  background: $white
+  border-top: 1px solid transparentize($grey, .85)
+
+  &.arrow
+    &.white
+      color: $white
+    &.grey
+      color: $grey
+    &:before
+      cursor: default
+      content: "v"
+      position: fixed
+      left: 50%
+      bottom: 71px
+      font-size: 30px
+
+input::-webkit-input-placeholder
+  color: $white
+  opacity: .7
+
+input::-moz-placeholder
+  color: $white
+  opacity: .7
+
+input::-moz-placeholder
+  color: $white
+  opacity: .7
+
+input::-ms-input-placeholder
+  color: $white
+  opacity: .7

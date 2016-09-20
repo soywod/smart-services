@@ -1,4 +1,4 @@
-@import "colors"
+@import "../colors"
 
 *,
 *:before,
@@ -23,9 +23,9 @@ a
 
 h2
   font-size: 48px
+  line-height: 55px
   font-weight: 100
   margin-top: 0
-  line-height: 55px
 
 h3
   font-size: 32px
@@ -45,6 +45,19 @@ footer
   background: $white
   border-top: 1px solid transparentize($grey, .85)
 
+  &.arrow
+    &.white
+      color: $white
+    &.grey
+      color: $grey
+    &:before
+      cursor: default
+      content: "v"
+      position: fixed
+      left: 50%
+      bottom: 80px
+      font-size: 35px
+
 input::-webkit-input-placeholder
   color: $white
   opacity: .7
@@ -60,32 +73,3 @@ input::-moz-placeholder
 input::-ms-input-placeholder
   color: $white
   opacity: .7
-
-// ==================== MEDIA QUERIES ==================== //
-
-@media (max-width: 1366px)
-  h2
-    font-size: 32px
-    line-height: 40px
-
-  h3
-    font-size: 26px
-
-  p
-    font-size: 18px
-    line-height: 22px
-
-  footer
-    height: 73px
-
-@media (max-width: 768px)
-  h2
-    font-size: 20px
-    line-height: 22px
-
-  h3
-    font-size: 16px
-    line-height: 18px
-  p
-    font-size: 14px
-    line-height: 16px

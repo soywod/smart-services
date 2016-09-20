@@ -1,4 +1,31 @@
-@import "colors"
+@import "../colors"
+
+.more
+  text-align: center
+  display: inline-block
+  font-size: 26px
+  line-height: 87px
+  height: 100px
+  width: 100px
+  text-decoration: none
+  border-radius: 50%
+  color: $black
+  border: 6px solid $black
+
+  &:hover
+    text-decoration: underline
+
+  &.white
+    color: $white
+    border-color: $white
+
+  &.blue
+    color: $blue
+    border-color: $blue
+
+  &.grey
+    color: $grey
+    border-color: $grey
 
 .template-1
   h2
@@ -193,73 +220,3 @@
     font-size: 14px
     text-align: right
     margin-top: 15px
-
-@media (max-width: 1366px)
-  .template-1
-    img
-      width: 40px
-
-    .container > p:last-of-type
-      margin: 14px 0 14px 0
-
-    .bar:before
-      top: 20px
-      height: 4px
-      width: 2000px
-
-    h4
-      font-size: 14px
-      line-height: 16px
-      margin-bottom: 10px
-      font-weight: bold
-
-    .flex p,
-    .flex ul
-      font-size: 12px
-      line-height: 14px
-
-  .template-2
-    .flex-1:before
-      right: 119px
-      top: 47px
-      height: 4px
-
-    .picto
-      width: 60px
-
-    .picto.line
-      width: 90px
-      border: 5px solid $white
-
-  .optimisation-documents
-    .flex-1
-      margin-top: 0
-
-  .papier-ou-numerique
-    .flex-1:before
-        left: 119px
-
-  .contact
-    .flex p
-      font-size: 16px
-      line-height: 20px
-
-    img
-      display: none
-
-    .bar:before
-      display: none
-
-@media (max-width: 768px)
-  .template-2
-    .flex-1:before
-      right: 89px
-      top: 28px
-      height: 4px
-
-    .picto
-      width: 40px
-
-    .picto.line
-      width: 60px
-      border: 3px solid $white

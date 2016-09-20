@@ -67,10 +67,24 @@ gulp.task("js-min", ["js-local-min", "js-vendors-head-min", "js-vendors-body-min
 
 // ==================== CSS tasks ==================== //
 
-gulp.task("css-local", function () {
-    return gulp.src("src/sass/main.sass")
+gulp.task("css-desktop", function () {
+    return gulp.src("src/sass/desktop.sass")
         .pipe(sass())
-        .pipe(concat("local.min.css"))
+        .pipe(concat("desktop.min.css"))
+        .pipe(gulp.dest("dist/css"));
+});
+
+gulp.task("css-tablet", function () {
+    return gulp.src("src/sass/tablet.sass")
+        .pipe(sass())
+        .pipe(concat("tablet.min.css"))
+        .pipe(gulp.dest("dist/css"));
+});
+
+gulp.task("css-mobile", function () {
+    return gulp.src("src/sass/mobile.sass")
+        .pipe(sass())
+        .pipe(concat("mobile.min.css"))
         .pipe(gulp.dest("dist/css"));
 });
 
@@ -80,11 +94,27 @@ gulp.task("css-vendors", function () {
         .pipe(gulp.dest("dist/css"));
 });
 
-gulp.task("css-local-min", function () {
-    return gulp.src("src/sass/main.sass")
+gulp.task("css-desktop-min", function () {
+    return gulp.src("src/sass/desktop.sass")
         .pipe(sass())
         .pipe(minify())
-        .pipe(concat("local.min.css"))
+        .pipe(concat("desktop.min.css"))
+        .pipe(gulp.dest("dist/css"));
+});
+
+gulp.task("css-tablet-min", function () {
+    return gulp.src("src/sass/tablet.sass")
+        .pipe(sass())
+        .pipe(minify())
+        .pipe(concat("tablet.min.css"))
+        .pipe(gulp.dest("dist/css"));
+});
+
+gulp.task("css-mobile-min", function () {
+    return gulp.src("src/sass/mobile.sass")
+        .pipe(sass())
+        .pipe(minify())
+        .pipe(concat("mobile.min.css"))
         .pipe(gulp.dest("dist/css"));
 });
 
@@ -95,14 +125,14 @@ gulp.task("css-vendors-min", function () {
         .pipe(gulp.dest("dist/css"));
 });
 
-gulp.task("css", ["css-local", "css-vendors"]);
-gulp.task("css-min", ["css-local-min", "css-vendors-min"]);
+gulp.task("css", ["css-desktop", "css-tablet", "css-mobile", "css-vendors"]);
+gulp.task("css-min", ["css-desktop-min", "css-tablet-min", "css-mobile-min", "css-vendors-min"]);
 
 // ==================== Global tasks ==================== //
 
-gulp.task('watch', function () {
-    gulp.watch('src/js/**/*.js', ['js-local']);
-    gulp.watch('src/sass/**/*.sass', ['css-local']);
+gulp.task("watch", function () {
+    gulp.watch("src/js/**/*.js", ["js-local"]);
+    gulp.watch("src/sass/**/*.sass", ["css-desktop", "css-tablet", "css-mobile"]);
 });
 
 gulp.task("default", ["css", "js"]);
