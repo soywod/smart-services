@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    var $footer = $("footer");
+    var $footer     = $("footer");
     var $menuBurger = $(".menu-burger");
-    var $menuRight = $(".menu-right");
+    var $menuRight  = $(".menu-right");
 
     $("#fullpage").fullpage({
         anchors       : [
@@ -18,6 +18,7 @@ $(document).ready(function () {
         menu          : ".menu-right",
         css3          : true,
         scrollingSpeed: 400,
+        autoScrolling : $(window).width() > 767,
         easingcss3    : "cubic-bezier(0.86, 0, 0.07, 1)",
         onLeave       : function (index, nextIndex, direction) {
             $footer.removeClass();
@@ -47,11 +48,11 @@ $(document).ready(function () {
         }
     });
 
-    $menuBurger.click(function() {
+    $menuBurger.click(function () {
         $menuRight.toggle();
     });
 
-    $menuRight.on("click", "a", function() {
+    $menuRight.on("click", "a", function () {
         $menuRight.toggle();
     });
 });
