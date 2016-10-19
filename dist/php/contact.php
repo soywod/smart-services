@@ -3,12 +3,26 @@
 $to = 'clementdouin@soywod.fr';
 $subject = 'Prise de contact sur smart-services.us';
 
-$message = '<html><body><strong>Contact : </strong>M/Mme ' . $_POST['last-name'] . ' ' . $_POST['first-name'] . "\r\n";
-$message .= '<strong>Société : </strong>' . $_POST['company'] . "\r\n";
-$message .= '<strong>Adresse : </strong>' . $_POST['address'] . ', ' . $_POST['zip'] . ' ' . $_POST['city'] . "\r\n";
-$message .= '<strong>Téléphone : </strong>' . $_POST['phone'] . "\r\n";
-$message .= '<strong>Email : </strong>' . $_POST['email'] . "\r\n";
-$message .= '<strong>Message : </strong>"' . $_POST['project'] . '"' . "\r\n";
+$firstName = ucfirst(strtolower($_POST['last-name']));
+$lastName = strtoupper($_POST['last-name']);
+$company = strtoupper($_POST['company']);
+$address = $_POST['address'];
+$zip = $_POST['zip'];
+$city = $_POST['city'];
+$phone = $_POST['phone'];
+$email = $_POST['email'];
+$project = $_POST['project'];
+
+$message = '<html><body>';
+$message .= "<p>Prise de contact sur <a href='http://www.smart-services.us'>smart-services.us</a> :</p>";
+$message .= "<ul style='margin: 0;padding: 0;list-style-type: none'>";
+$message .= "<li>Mr ou Mme $lastName $firstName</li>";
+$message .= "<li>Société $company</li>";
+$message .= "<li>$address, $zip $city</li>";
+$message .= "<li>$phone</li>";
+$message .= "<li><a href='mailto:$email'>$email</a></li>";
+$message .= "</ul>";
+$message .= "<p><em>&laquo; $project &raquo;</em></p>";
 $message .= '</body></html>';
 
 $headers = 'From: ' . $_POST['email'] . "\r\n";
