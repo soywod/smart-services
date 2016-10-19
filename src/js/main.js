@@ -48,7 +48,8 @@ $(document).ready(function () {
         }
     });
 
-    $menuBurger.click(function () {
+    $menuBurger.click(function (event) {
+        event.preventDefault();
         $menuRight.toggle();
     });
 
