@@ -62,9 +62,16 @@ $(document).ready(function () {
         event.preventDefault();
 
         var $this = $(this);
+        var $submit = $this.find("button[type=submit]");
 
-        $.post("/php/contact.php", $this.serialize(), function(xhr) {
-            console.log(xhr);
+        $submit.html('Envoi en cours ...');
+
+        $.post("/php/contact.php", $this.serialize(), function(res) {
+            if (res == 1) {
+                window.alert('Votre prise de contact a bien été enregistrée. Nous vous répondrons dans les plus brefs délais.');
+            }
+
+            $submit.html('Valider');
         });
     })
 });
