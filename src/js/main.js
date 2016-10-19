@@ -1,7 +1,8 @@
 $(document).ready(function () {
-    var $footer     = $("footer");
-    var $menuBurger = $(".menu-burger");
-    var $menuRight  = $(".menu-right");
+    var $footer      = $("footer");
+    var $menuBurger  = $(".menu-burger");
+    var $menuRight   = $(".menu-right");
+    var $contactForm = $(".contact-form");
 
     $("#fullpage").fullpage({
         anchors       : [
@@ -56,4 +57,14 @@ $(document).ready(function () {
     $menuRight.on("click", "a", function () {
         $menuRight.toggle();
     });
+
+    $contactForm.on("submit", function(event) {
+        event.preventDefault();
+
+        var $this = $(this);
+
+        $.post("/php/contact.php", $this.serialize(), function(xhr) {
+            console.log(xhr);
+        });
+    })
 });
