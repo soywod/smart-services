@@ -67,11 +67,16 @@ $(document).ready(function () {
         $submit.html('Envoi en cours ...');
 
         $.post("/php/contact.php", $this.serialize(), function(res) {
-            if (res == 1) {
+            if (res == '') {
                 window.alert('Votre prise de contact a bien été enregistrée. Nous vous répondrons dans les plus brefs délais.');
+                window.location.reload(true);
             }
-
+            else {
+                window.alert(res);
+            }
+        })
+        .always(function() {
             $submit.html('Valider');
         });
-    })
+    });
 });
