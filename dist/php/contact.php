@@ -1,6 +1,6 @@
 <?php
 
-$to = 'fm@smart-services.us';
+$to = 'services@smart-services.us';
 $subject = 'Prise de contact sur smart-services.us';
 
 $firstName = ucfirst(strtolower($_POST['last-name']));
